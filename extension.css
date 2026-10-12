@@ -1,0 +1,65 @@
+/* Scoped themes: no dependency on the Engine's background colors. */
+#marinara-cast-studio { --cs-bg:#f3f5fa;--cs-card:#fff;--cs-field:#fff;--cs-text:#202a40;--cs-muted:#526079;--cs-border:#ccd3e0;--cs-accent:#4a4caa;--cs-accent-soft:#ececfc;--cs-shadow:0 24px 100px #12193433; font:15px/1.65 system-ui,-apple-system,sans-serif;color:var(--cs-text);color-scheme:light; }
+#marinara-cast-studio[data-theme="dark"]{--cs-bg:#202534;--cs-card:#2a3142;--cs-field:#212838;--cs-text:#f1f3fa;--cs-muted:#bac4d8;--cs-border:#505e77;--cs-accent:#b5b8ff;--cs-accent-soft:#3c426b;--cs-shadow:0 24px 100px #0006;color-scheme:dark;}
+#marinara-cast-studio *{box-sizing:border-box;}
+#marinara-cast-studio [hidden]{display:none!important;}
+#marinara-cast-studio .cs-overlay{position:fixed;inset:0;background:#11182b66;z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(5px);}
+#marinara-cast-studio .cs-modal{background:var(--cs-bg);border:1px solid var(--cs-border);border-radius:20px;width:min(860px,100%);height:min(900px,94dvh);display:flex;flex-direction:column;box-shadow:var(--cs-shadow);overflow:hidden;}
+#marinara-cast-studio header{display:flex;align-items:center;gap:8px;padding:18px 24px;background:var(--cs-card);border-bottom:1px solid var(--cs-border);flex-shrink:0;}
+#marinara-cast-studio header>div{flex:1;min-width:0;}#marinara-cast-studio header b{font-size:20px;}#marinara-cast-studio small{display:block;font-size:12px;color:var(--cs-muted);}
+#marinara-cast-studio button{font:inherit;line-height:1.4;background:var(--cs-card);color:var(--cs-text);border:1px solid var(--cs-border);border-radius:10px;padding:11px 15px;min-height:42px;cursor:pointer;transition:background .12s;}
+#marinara-cast-studio button:hover{background:var(--cs-accent-soft);}
+#marinara-cast-studio button.primary{background:#5356af;color:#fff;border-color:#5356af;font-weight:650;}
+#marinara-cast-studio button.primary:hover{background:#42459a;}
+#marinara-cast-studio button.active{background:var(--cs-accent-soft);color:var(--cs-accent);border-color:var(--cs-accent);font-weight:650;}
+#marinara-cast-studio button:disabled{opacity:.5;cursor:wait;}
+#marinara-cast-studio nav{display:flex;gap:8px;padding:14px 24px;flex-shrink:0;}
+#marinara-cast-studio nav button{display:flex;align-items:center;justify-content:center;gap:8px;flex:1;font-size:13px;}
+#marinara-cast-studio nav button span{width:23px;height:23px;border-radius:50%;display:grid;place-items:center;background:var(--cs-bg);font-size:12px;}
+#marinara-cast-studio .cs-content{padding:4px 24px 22px;overflow:auto;flex:1;min-height:0;overscroll-behavior:contain;}
+#marinara-cast-studio .cs-intro{margin:4px 0 20px;}#marinara-cast-studio h2{font-size:21px;margin:0 0 5px;line-height:1.5;}
+#marinara-cast-studio .cs-intro p{color:var(--cs-muted);font-size:14px;margin:0;}
+#marinara-cast-studio .cs-modebar{display:flex;gap:10px;margin-bottom:18px;}#marinara-cast-studio .cs-modebar button{flex:1;min-height:48px;}
+#marinara-cast-studio .cs-card,#marinara-cast-studio .cs-field-card{background:var(--cs-card);border:1px solid var(--cs-border);border-radius:13px;padding:18px 20px;margin:0 0 14px;}
+#marinara-cast-studio h3{font-size:16px;margin:0 0 10px;}
+#marinara-cast-studio label{display:block;margin:0 0 15px;font-size:14px;font-weight:600;}
+#marinara-cast-studio input,#marinara-cast-studio textarea,#marinara-cast-studio select{display:block;width:100%;font:inherit;font-size:15px;font-weight:400;background:var(--cs-field);color:var(--cs-text);border:1px solid var(--cs-border);border-radius:9px;padding:11px 12px;margin-top:7px;min-height:44px;}
+#marinara-cast-studio input::placeholder,#marinara-cast-studio textarea::placeholder{color:var(--cs-muted);opacity:.85;}
+#marinara-cast-studio select option{background:var(--cs-card);color:var(--cs-text);}
+#marinara-cast-studio textarea{min-height:108px;resize:vertical;line-height:1.7;}
+#marinara-cast-studio .cs-row{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0;}#marinara-cast-studio .cs-row label{flex:1;min-width:130px;margin:0;}
+#marinara-cast-studio .cs-note{font-size:13px;color:var(--cs-muted);line-height:1.8;margin:10px 0;}
+#marinara-cast-studio .cs-check{display:flex;align-items:center;gap:10px;font-weight:400;margin:14px 0 0;}
+#marinara-cast-studio .cs-check input{width:18px;height:18px;min-height:0;flex-shrink:0;margin:0;accent-color:#5356af;}
+#marinara-cast-studio details>summary{cursor:pointer;font-size:14px;font-weight:650;min-height:24px;}
+#marinara-cast-studio details>summary span{font-size:12px;color:var(--cs-muted);font-weight:400;margin-left:8px;}
+#marinara-cast-studio details[open]>summary{margin-bottom:14px;}
+#marinara-cast-studio .cs-bottom-actions{display:flex;flex-wrap:wrap;gap:10px;padding:14px 24px;background:var(--cs-card);border-top:1px solid var(--cs-border);flex-shrink:0;}
+#marinara-cast-studio .cs-bottom-actions .primary{flex:1;}
+#marinara-cast-studio .cs-status{border-top:1px solid var(--cs-border);padding:10px 24px;font-size:12px;color:var(--cs-muted);white-space:pre-wrap;overflow-wrap:anywhere;max-height:90px;overflow:auto;flex-shrink:0;}
+#marinara-cast-studio .cs-candidates{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
+#marinara-cast-studio .cs-field-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;}
+#marinara-cast-studio .cs-field-head label{margin:0;font-size:15px;}
+#marinara-cast-studio .cs-text-button{font-size:12px;color:var(--cs-accent);padding:6px 10px;min-height:36px;}
+#marinara-cast-studio .cs-badge{font-size:11px;font-weight:400;margin-left:7px;padding:3px 7px;background:var(--cs-bg);border-radius:6px;color:var(--cs-muted);}
+#marinara-cast-studio .cs-proposal{border:1px solid var(--cs-accent);border-radius:10px;padding:15px;margin-top:15px;background:var(--cs-accent-soft);}
+#marinara-cast-studio .cs-proposal p,#marinara-cast-studio .cs-preview p{white-space:pre-wrap;overflow-wrap:anywhere;}
+#marinara-cast-studio .cs-preview h4{font-size:14px;margin:20px 0 6px;color:var(--cs-accent);}#marinara-cast-studio .cs-preview p{font-size:14px;margin:5px 0;}
+#marinara-cast-studio .cs-archive{display:flex;align-items:center;gap:15px;padding:16px 0;border-bottom:1px solid var(--cs-border);}#marinara-cast-studio .cs-archive span{flex:1;min-width:0;overflow-wrap:anywhere;}
+#marinara-cast-studio :focus-visible{outline:3px solid var(--cs-accent);outline-offset:2px;}
+/* Added only to verified Lorebook toolbars; inherit native theme. */
+.cs-native-entry{display:inline-flex;align-items:center;justify-content:center;min-width:36px;flex-shrink:0;cursor:pointer;}
+.cs-native-entry svg{pointer-events:none;}
+@media(max-width:600px){#marinara-cast-studio .cs-overlay{padding:0;}#marinara-cast-studio .cs-modal{height:100dvh;max-height:100dvh;border-radius:0;border:0;}#marinara-cast-studio header{padding:12px;gap:6px;}#marinara-cast-studio header b{font-size:17px;}#marinara-cast-studio header small{display:none;}#marinara-cast-studio header button{padding:9px;font-size:12px;}#marinara-cast-studio .cs-refresh-label{display:none;}#marinara-cast-studio nav{padding:12px;gap:6px;}#marinara-cast-studio nav button{padding:9px 4px;font-size:12px;gap:4px;}#marinara-cast-studio nav button span{width:20px;height:20px;font-size:11px;}#marinara-cast-studio .cs-content{padding:2px 12px 16px;}#marinara-cast-studio h2{font-size:19px;}#marinara-cast-studio .cs-card,#marinara-cast-studio .cs-field-card{padding:15px 13px;}#marinara-cast-studio .cs-bottom-actions{padding:12px;}#marinara-cast-studio .cs-status{padding:8px 12px;font-size:11px;}#marinara-cast-studio .cs-modebar button{padding:11px 8px;font-size:14px;}#marinara-cast-studio .cs-bottom-actions button{font-size:13px;}#marinara-cast-studio .cs-archive{gap:8px;}}
+@media(prefers-reduced-motion:reduce){#marinara-cast-studio *{scroll-behavior:auto!important;transition:none!important;}}
+
+#marinara-cast-studio [data-state="guide"]{min-height:210px;}
+#marinara-cast-studio .cs-saved{border-color:var(--cs-accent);}
+#marinara-cast-studio .cs-archive{flex-wrap:wrap;}
+#marinara-cast-studio [data-delete-draft]{color:#b53441;}
+#marinara-cast-studio[data-theme="dark"] [data-delete-draft]{color:#ffb4ba;}
+
+#marinara-cast-studio .cs-research a{color:var(--cs-accent);overflow-wrap:anywhere;}
+#marinara-cast-studio .cs-research ul{padding-left:22px;font-size:14px;}
+#marinara-cast-studio .cs-research li{margin-bottom:10px;}
+@media(max-width:600px){#marinara-cast-studio header{flex-wrap:wrap;}#marinara-cast-studio header>div{flex-basis:100%;}#marinara-cast-studio header .cs-clear-header{margin-left:auto;}}
