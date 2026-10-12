@@ -3,7 +3,7 @@
   "version": 1,
   "config": {
     "name": "가챠포지 캐릭터 자동생성",
-    "description": "가챠포지 캐릭터 자동생성 v1.4.0: 프로필 항목별 웹검색 자료 수집, 외형 특징 보존, 검색 수집 지침 편집·별도 프리셋.",
+    "description": "가챠포지 캐릭터 자동생성 v1.4.1: 프로필 항목별 웹검색 자료 수집, 외형 특징 보존, 검색 수집 지침 편집·별도 프리셋.",
     "runtime": "client",
     "enabled": true,
     "capabilities": [
@@ -11,6 +11,6 @@
     ],
     "cssPath": "extension.css",
     "jsPath": "extension.js",
-    "version": "1.4.0"
+    "version": "1.4.1"
   }
 }
