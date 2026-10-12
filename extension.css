@@ -63,3 +63,6 @@
 #marinara-cast-studio .cs-research ul{padding-left:22px;font-size:14px;}
 #marinara-cast-studio .cs-research li{margin-bottom:10px;}
 @media(max-width:600px){#marinara-cast-studio header{flex-wrap:wrap;}#marinara-cast-studio header>div{flex-basis:100%;}#marinara-cast-studio header .cs-clear-header{margin-left:auto;}}
+
+#marinara-cast-studio [data-state="searchGuide"]{min-height:260px;}
+#marinara-cast-studio .cs-research details{margin:12px 0;padding:10px 0;border-top:1px solid var(--cs-border);}
